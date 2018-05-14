@@ -1,0 +1,300 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Navigation.Master" AutoEventWireup="true" CodeBehind="Leave.aspx.cs" Inherits="OnlineEmployeeProfile.Leave" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {         
+   
+            width: 100%;
+        
+        }
+        .auto-style2 {
+            height: 27px;
+        }
+        .auto-style3 {
+            width: 40%;
+        }
+        .auto-style4 {
+            text-align: left;
+            width: 144px;
+        }
+        .auto-style7 {
+            width: 99px;
+        }
+        .auto-style8 {
+            width: 328px;
+        }
+        .auto-style9 {
+            width: 325px;
+        }
+        .auto-style11 {
+            width: 314px;
+        }
+        .auto-style12 {
+            width: 308px;
+        }
+        .auto-style13 {
+            width: 233px;
+            height: 112px;
+        }
+        .auto-style14 {
+            width: 233px;
+            text-align: left;
+        }
+        .auto-style15 {
+            width: 175px;
+        }
+        .auto-style16 {
+            width: 144px;
+        }
+        .auto-style17 {
+            width: 311px;
+        }
+        .auto-style18 {
+            width: 311px;
+            height: 112px;
+        }
+        .auto-style19 {
+            width: 144px;
+            height: 112px;
+        }
+        .auto-style20 {
+            height: 148px;
+        }
+        .auto-style21 {
+            height: 112px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <table ID="PageTable" align="center" cellpadding="10" class="auto-style1";>
+        <tr>
+            <td class="auto-style7">
+                &nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td class="auto-style2">
+                <asp:Label ID="lblLeaveDetails" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Leave Details" Font-Underline="True"></asp:Label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <table align="center" cellpadding="10" class="auto-style3">
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="lblOutstanding" runat="server" Font-Bold="True" Font-Size="Large" Text="Outstanding Leave" CssClass="auto-style20" Font-Underline="True"></asp:Label>
+                        </td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="lblAnnualLeave" runat="server" Font-Bold="True" Font-Size="Medium" Text="Annual Leave:"></asp:Label>
+                        </td>
+                        <td class="auto-style4"><asp:Label ID="lblALeave" runat="server" Text="101 hours"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="lblHolidayLeave" runat="server" Font-Bold="True" Font-Size="Medium" Text="Holiday Leave:" CssClass="auto-style8"></asp:Label>
+                        </td>
+                        <td class="auto-style4">
+                <asp:Label ID="lblHLeave" runat="server" Text="9 days" CssClass="auto-style9"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="lblSickLeave" runat="server" Font-Bold="True" Font-Size="Medium" Text="Sick Leave:" CssClass="auto-style11"></asp:Label>
+                        </td>
+                        <td class="auto-style4">
+                <asp:Label ID="lbSLeave" runat="server" Text="5 days" CssClass="auto-style12"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="lblAppForLeave" runat="server" Font-Bold="True" Font-Size="Large" Text="Application for Leave" CssClass="auto-style15" Font-Underline="True"></asp:Label>
+                        </td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="LblStart" runat="server" Font-Bold="True" Text="Start:"></asp:Label>
+                &nbsp;
+                <asp:DropDownList ID="ddlSDay" runat="server" OnSelectedIndexChanged="ddlSDay_SelectedIndexChanged">
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
+                    <asp:ListItem>6</asp:ListItem>
+                    <asp:ListItem>7</asp:ListItem>
+                    <asp:ListItem>8</asp:ListItem>
+                    <asp:ListItem>9</asp:ListItem>
+                    <asp:ListItem>10</asp:ListItem>
+                    <asp:ListItem>11</asp:ListItem>
+                    <asp:ListItem>12</asp:ListItem>
+                    <asp:ListItem>13</asp:ListItem>
+                    <asp:ListItem>14</asp:ListItem>
+                    <asp:ListItem>15</asp:ListItem>
+                    <asp:ListItem>16</asp:ListItem>
+                    <asp:ListItem>17</asp:ListItem>
+                    <asp:ListItem>18</asp:ListItem>
+                    <asp:ListItem>19</asp:ListItem>
+                    <asp:ListItem>20</asp:ListItem>
+                    <asp:ListItem>21</asp:ListItem>
+                    <asp:ListItem>22</asp:ListItem>
+                    <asp:ListItem>23</asp:ListItem>
+                    <asp:ListItem>24</asp:ListItem>
+                    <asp:ListItem>25</asp:ListItem>
+                    <asp:ListItem>26</asp:ListItem>
+                    <asp:ListItem>27</asp:ListItem>
+                    <asp:ListItem>28</asp:ListItem>
+                    <asp:ListItem>29</asp:ListItem>
+                    <asp:ListItem>30</asp:ListItem>
+                    <asp:ListItem>31</asp:ListItem>
+                </asp:DropDownList>
+                <asp:DropDownList ID="ddlSMonth" runat="server">
+                    <asp:ListItem>January</asp:ListItem>
+                    <asp:ListItem>February</asp:ListItem>
+                    <asp:ListItem>March</asp:ListItem>
+                    <asp:ListItem>April</asp:ListItem>
+                    <asp:ListItem>May</asp:ListItem>
+                    <asp:ListItem>June</asp:ListItem>
+                    <asp:ListItem>July</asp:ListItem>
+                    <asp:ListItem>August</asp:ListItem>
+                    <asp:ListItem>September</asp:ListItem>
+                    <asp:ListItem>October</asp:ListItem>
+                    <asp:ListItem>November</asp:ListItem>
+                    <asp:ListItem>December</asp:ListItem>
+                </asp:DropDownList>
+                <asp:DropDownList ID="ddlSYear" runat="server">
+                    <asp:ListItem>2018</asp:ListItem>
+                    <asp:ListItem>2019</asp:ListItem>
+                    <asp:ListItem>2020</asp:ListItem>
+                </asp:DropDownList>
+                        </td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="lblEnd" runat="server" Font-Bold="True" Font-Size="Medium" Text="End:"></asp:Label>
+                &nbsp;
+                <asp:DropDownList ID="ddlEDay" runat="server">
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
+                    <asp:ListItem>6</asp:ListItem>
+                    <asp:ListItem>7</asp:ListItem>
+                    <asp:ListItem>8</asp:ListItem>
+                    <asp:ListItem>9</asp:ListItem>
+                    <asp:ListItem>10</asp:ListItem>
+                    <asp:ListItem>11</asp:ListItem>
+                    <asp:ListItem>12</asp:ListItem>
+                    <asp:ListItem>13</asp:ListItem>
+                    <asp:ListItem>14</asp:ListItem>
+                    <asp:ListItem>15</asp:ListItem>
+                    <asp:ListItem>16</asp:ListItem>
+                    <asp:ListItem>17</asp:ListItem>
+                    <asp:ListItem>18</asp:ListItem>
+                    <asp:ListItem>19</asp:ListItem>
+                    <asp:ListItem>20</asp:ListItem>
+                    <asp:ListItem>21</asp:ListItem>
+                    <asp:ListItem>22</asp:ListItem>
+                    <asp:ListItem>23</asp:ListItem>
+                    <asp:ListItem>24</asp:ListItem>
+                    <asp:ListItem>25</asp:ListItem>
+                    <asp:ListItem>26</asp:ListItem>
+                    <asp:ListItem>27</asp:ListItem>
+                    <asp:ListItem>28</asp:ListItem>
+                    <asp:ListItem>29</asp:ListItem>
+                    <asp:ListItem>30</asp:ListItem>
+                    <asp:ListItem>31</asp:ListItem>
+                </asp:DropDownList>
+                <asp:DropDownList ID="ddlEMonth" runat="server">
+                    <asp:ListItem>January</asp:ListItem>
+                    <asp:ListItem>February</asp:ListItem>
+                    <asp:ListItem>March</asp:ListItem>
+                    <asp:ListItem>April</asp:ListItem>
+                    <asp:ListItem>May</asp:ListItem>
+                    <asp:ListItem>June</asp:ListItem>
+                    <asp:ListItem>July</asp:ListItem>
+                    <asp:ListItem>August</asp:ListItem>
+                    <asp:ListItem>September</asp:ListItem>
+                    <asp:ListItem>October</asp:ListItem>
+                    <asp:ListItem>November</asp:ListItem>
+                    <asp:ListItem>December</asp:ListItem>
+                </asp:DropDownList>
+                <asp:DropDownList ID="ddlEYear" runat="server">
+                    <asp:ListItem>2018</asp:ListItem>
+                    <asp:ListItem>2019</asp:ListItem>
+                    <asp:ListItem>2020</asp:ListItem>
+                </asp:DropDownList>
+                        </td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+                <asp:Label ID="lblLeaveType" runat="server" Font-Bold="True" Text="Leave Type:"></asp:Label>
+                &nbsp;
+                <asp:DropDownList ID="ddlLeaveType" runat="server">
+                    <asp:ListItem>Annual Leave</asp:ListItem>
+                    <asp:ListItem>Holiday Leave</asp:ListItem>
+                    <asp:ListItem>Sick Leave</asp:ListItem>
+                </asp:DropDownList>
+                        </td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+
+                <asp:Label ID="lblReason" runat="server" Font-Bold="True" Text="Reason:"></asp:Label>
+
+                        </td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style18"></td>
+                        <td class="auto-style13">
+
+                <asp:TextBox ID="txtReason" runat="server" Height="82px" TextMode="MultiLine" Width="285px"></asp:TextBox>
+
+                        </td>
+                        <td class="auto-style19"></td>
+                        <td class="auto-style21"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style17">&nbsp;</td>
+                        <td class="auto-style14">
+
+                <asp:Button ID="btnSubmit" runat="server" Font-Bold="True" Text="Submit" />
+
+                        </td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+
+</asp:Content>
