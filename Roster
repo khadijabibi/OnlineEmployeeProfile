@@ -1,0 +1,200 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Navigation.Master" AutoEventWireup="true" CodeBehind="Roster.aspx.cs" Inherits="OnlineEmployeeProfile.Roster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 42px;
+        }
+        .bar {
+            width: 146px;
+        }
+        .roster {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        .data {
+            width: 150px;
+            height: 40px;
+            border: 1px solid black;
+        }
+        .auto-style4 {
+            width: 150px;
+            border: 1px solid black;
+            height: 41px;
+        }
+        .auto-style5 {
+            font-size: x-large;
+        }
+        .auto-style6 {
+            width: 150px;
+            border: 1px solid black;
+            height: 22px;
+        }
+        .auto-style7 {
+            width: 150px;
+            border: 1px solid black;
+            background-color: #FFFF66;
+        }
+        .auto-style8 {
+            width: 150px;
+            border: 1px solid black;
+            height: 22px;
+            background-color: #FFFF66;
+        }
+        .auto-style9 {
+            width: 150px;
+            border: 1px solid black;
+            height: 40px;
+            background-color: #FFFF66;
+        }
+        </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <table align="center" cellpadding="3" class="auto-style2">
+        <tr>
+            <td class="auto-style3"></td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lblJobDetails" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Roster" Font-Underline="True"></asp:Label>
+                <br />
+                <br />
+                <strong><span class="auto-style5">Week 1</span></strong><span class="auto-style5"> of </span><strong><span class="auto-style5">June 2018<br />
+                <br />
+                Department: Deli<br />
+                </span></strong><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+                <table class="roster" align="center">
+                    <tr>
+                        <td class="auto-style4"><strong>Employee</strong></td>
+                        <td class="auto-style4">4 June<br />
+                            <strong>Monday</strong></td>
+                        <td class="auto-style4">5 June<br />
+                            <strong>Tuesday</strong></td>
+                        <td class="auto-style4">6 June<br />
+                            <strong>Wednesday</strong></td>
+                        <td class="auto-style4">7 June<br />
+                            <strong>Thursday</strong></td>
+                        <td class="auto-style4">8 June<br />
+                            <strong>Friday</strong></td>
+                        <td class="auto-style4">9 June<br />
+                            <strong>Saturday</strong></td>
+                        <td class="auto-style4">10 June<br />
+                            <strong>Sunday</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="data">Alice Ludlow</td>
+                        <td class="auto-style7">6:00 - 14:30</td>
+                        <td class="auto-style7">10:00 - 18:30</td>
+                        <td class="auto-style7">9:00 - 17:30</td>
+                        <td class="auto-style7">10:00 - 18:30</td>
+                        <td class="data">&nbsp;</td>
+                        <td class="auto-style7">9:00 - 17:30</td>
+                        <td class="data">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="data">Mariana Wallis</td>
+                        <td class="data"></td>
+                        <td class="auto-style8">6:00 - 14:30</td>
+                        <td class="auto-style8">10:00 - 18:30</td>
+                        <td class="auto-style8">12:00 - 20:30</td>
+                        <td class="auto-style8">6:00 - 14:30</td>
+                        <td class="auto-style8">10:00 - 18:30</td>
+                        <td class="auto-style8">10:00 - 18:30</td>
+                    </tr>
+                    <tr>
+                        <td class="data">Phillip Wyatt</td>
+                        <td class="auto-style7">6:00 - 14:30</td>
+                        <td class="data">&nbsp;</td>
+                        <td class="auto-style7">10:00 - 18:30</td>
+                        <td class="auto-style7">10:00 - 18:30</td>
+                        <td class="auto-style7">12:00 - 20:30</td>
+                        <td class="data">&nbsp;</td>
+                        <td class="auto-style7">9:00 - 17:30</td>
+                    </tr>
+                    <tr>
+                        <td class="data">Noela Richards</td>
+                        <td class="auto-style8">10:00 - 18:30</td>
+                        <td class="auto-style8">12:00 - 20:30</td>
+                        <td class="auto-style8">6:00 - 14:30</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">12:00 - 20:30</td>
+                        <td class="auto-style8">6:00 - 14:30</td>
+                        <td class="auto-style6"></td>
+                    </tr>
+                    <tr>
+                        <td class="data">Jane Doe</td>
+                        <td class="auto-style8">12:00 - 20:30</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">16:00 - 23:00</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">8:00 - 16:30</td>
+                        <td class="auto-style8">10:00 - 18:30</td>
+                        <td class="auto-style8">10:00 - 18:30</td>
+                    </tr>
+                    <tr>
+                        <td class="data">Olivia Brandon</td>
+                        <td class="auto-style9">9:00 - 17:30</td>
+                        <td class="auto-style9">6:00 - 14:30</td>
+                        <td class="data"></td>
+                        <td class="auto-style9">9:00 - 17:30</td>
+                        <td class="auto-style9">12:00 - 20:30</td>
+                        <td class="data"></td>
+                        <td class="auto-style9">6:00 - 14:30</td>
+                    </tr>
+                    <tr>
+                        <td class="data">Tara Linden</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">16:00 - 23:00</td>
+                        <td class="auto-style8">8:00 - 16:30</td>
+                        <td class="auto-style8">12:00 - 20:30</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">9:00 - 17:30</td>
+                        <td class="auto-style8">8:00 - 16:30</td>
+                    </tr>
+                    <tr>
+                        <td class="data">John Smith</td>
+                        <td class="auto-style8">12:00 - 20:30</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">12:00 - 20:30</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">6:00 - 14:30</td>
+                        <td class="auto-style8">16:00 - 23:00</td>
+                        <td class="auto-style8">16:00 - 23:00</td>
+                    </tr>
+                    <tr>
+                        <td class="data">Tim Holland</td>
+                        <td class="auto-style8">16:00 - 23:00</td>
+                        <td class="auto-style8">9:00 - 17:30</td>
+                        <td class="auto-style8">8:00 - 16:30</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">9:00 - 17:30</td>
+                        <td class="auto-style6"></td>
+                        <td class="auto-style8">8:00 - 16:30</td>
+                    </tr>
+                    <tr>
+                        <td class="data">Mike Stratton</td>
+                        <td class="data">&nbsp;</td>
+                        <td class="data">&nbsp;</td>
+                        <td class="data">&nbsp;</td>
+                        <td class="auto-style9">16:00 - 23:00</td>
+                        <td class="auto-style7">16:00 - 23:00</td>
+                        <td class="auto-style7">12:00 - 20:30</td>
+                        <td class="auto-style7">6:00 - 14:30</td>
+                    </tr>
+                </table>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</asp:Content>
