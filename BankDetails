@@ -1,0 +1,113 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Navigation.Master" AutoEventWireup="true" CodeBehind="BankDetails.aspx.cs" Inherits="OnlineEmployeeProfile.BankDetails" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {         
+   
+            width: 100%;
+        
+        }
+        .auto-style2 {
+            height: 27px;
+        }
+        .auto-style3 {
+            width: 40%;
+        }
+        .auto-style4 {
+            text-align: left;
+        }
+        .auto-style7 {
+            width: 99px;
+        }
+        .auto-style8 {
+            width: 299px;
+        }
+        .auto-style9 {
+            width: 137px;
+        }
+        .auto-style10 {
+            width: 137px;
+            text-align: left;
+        }
+    .auto-style11 {
+        height: 41px;
+    }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
+    <table ID="PageTable" align="center" cellpadding="10" class="auto-style1">
+        <tr>
+            <td class="auto-style11" >
+
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:Label ID="lblBankDetail" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Bank Details" Font-Underline="True"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" cellpadding="10" class="auto-style3">
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style9" style="text-align: left">
+                <asp:Label ID="lblName" runat="server" Font-Bold="True" Font-Size="Medium" Text="Name:"></asp:Label>
+                        </td>
+                        <td class="auto-style4"><asp:Label ID="lblEmpName" runat="server" Text="John Smith"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style9" style="text-align: left">
+                <asp:Label ID="lblBankAcc" runat="server" Font-Bold="True" Font-Size="Medium" Text="Bank Account:"></asp:Label>
+                        </td>
+                        <td style="text-align: left"><asp:Label ID="lblBankNumber" runat="server" Text="38-9078-3456-3420"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style9" style="text-align: left">
+                <asp:Label ID="lblTax" runat="server" Font-Bold="True" Font-Size="Medium" Text="Tax Code:"></asp:Label>
+                        </td>
+                        <td style="text-align: left"><asp:Label ID="lbltaxCode" runat="server" Text="MSL"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style9" style="text-align: left">
+                <asp:Label ID="lblIRD" runat="server" Font-Bold="True" Font-Size="Medium" Text="IRD Number:"></asp:Label>
+                        </td>
+                        <td class="auto-style4"><asp:Label ID="lblIRDNumber" runat="server" Text="17689076"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style10">
+                <asp:Label ID="lblkiwi" runat="server" Font-Bold="True" Font-Size="Medium" Text="Kiwisaver:"></asp:Label>
+                        </td>
+                        <td class="auto-style4"><asp:Label ID="lblKiwisaver" runat="server" Text="Yes"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style10">
+                <asp:Label ID="lblCont" runat="server" Font-Bold="True" Font-Size="Medium" Text="Contribution:"></asp:Label>
+                        </td>
+                        <td class="auto-style4"><asp:Label ID="lblContribution" runat="server" Text="2%"></asp:Label>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+
+
+</asp:Content>
