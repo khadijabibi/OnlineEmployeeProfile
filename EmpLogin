@@ -1,0 +1,76 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EmpLogin.aspx.cs" Inherits="OnlineEmployeeProfile.EmpLogin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            
+        }
+        .auto-style2 {
+            height: 50px;
+        }
+        .auto-style3 {
+            height: 34px;
+        }
+    .auto-style4 {
+        height: 54px;
+    }
+</style>   
+    <form id="form1" runat="server">
+        <div>
+        <header id="header">  
+        <h1>Online Employees Profile</h1>  
+        </header> 
+        <nav id="Loginnav"> 
+        <ul>
+            <li></li>
+        </ul>
+        </nav>
+        </div>
+        <div>
+            <table ID="LoginTable" align="center" class="auto-style1" border="0">
+        <tr>
+            <td class="auto-style4">
+                <asp:Label ID="lblVLogin" runat="server" Font-Bold="True" Font-Size="Larger" Text="Employee Login System"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lblVUsername" runat="server" Font-Bold="True" Text="Username:"></asp:Label>
+&nbsp;
+                <asp:TextBox ID="txtbxUsername" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:Label ID="lblVPassword" runat="server" Font-Bold="True" Text="Password:"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="txtbxPassword" TextMode="Password" runat="server" OnTextChanged="txtbxPassword_TextChanged"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:Button ID="btnLogin" runat="server" Font-Bold="True" OnClick="btnLogin_Click" Text="Login" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                &nbsp;</td>
+        </tr>
+    </table>
+        </div>
+    </form>
+</body>
+</html>
